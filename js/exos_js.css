@@ -1,0 +1,1029 @@
+.counterContainer {
+    width: 400px;
+    height: 200px;
+
+    border: solid 3px white;
+    border-radius: 10px;
+
+    margin: 50px auto;
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.countBox {
+    margin-top: 10%;
+    height: 50%;
+    width: 50%;
+
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+
+    border-radius: 10px;
+}
+
+.counterBtn {
+    position: absolute;
+    top: 45%;
+    height: 10%;
+    width: 10%;
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.right10 {
+    right: 0px;
+}
+
+.right {
+    right: 10%
+}
+
+.left10 {
+    left: 0px;
+}
+
+.left {
+    left: 10%;
+}
+
+.clearBtn {
+    width: 20%;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    cursor: pointer;
+}
+
+/*exo2==============================================================================================*/
+
+.txtInput {
+    width: 500px;
+    height: 80px;
+
+    color: black;
+    background-color: white;
+
+    padding-left: 15px;
+
+    font-size: 2em;
+
+    margin: 50px 30%;
+
+    outline: none;
+}
+
+.ex2Count {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.alert {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alertTxt {
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.tooMuch {
+    color: red;
+}
+
+/*exo3====================================================================================================================*/
+
+.shopListAndBtn {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cartContainer {
+    height: 100%;
+    background-color: white;
+    gap: 20px;
+    padding: 20px;
+    margin: 50px;
+    width: 400px;
+    min-width: 200px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.bill {
+    border-top: solid 2px black;
+    width: 100%;
+    padding: 15px;
+    margin-left: 0px;
+    box-sizing: border-box;
+}
+
+.selectionBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.itemBtn {
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.shopListItem {
+    font-size: 4em;
+    position: relative;
+    z-index: 2;
+}
+
+.adjustQtyBtn {
+
+    border: solid 1px black;
+    background-color: transparent;
+    font-size: 1.5em;
+
+    height: 20px;
+    width: 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.plus {
+    padding-bottom: 5px;
+}
+
+.cartItem {
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.qtyAndBtns {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: none;
+    flex-wrap: nowrap;
+    margin-left: 50px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.subTotal {
+    margin-left: 15px;
+}
+
+/* Exo 4 ==================================================================================== */
+
+.calculatorContainer {
+    width: 400px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border: solid 3px white;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 331px;
+    height: 70px;
+    color: black;
+    background-color: #b6c9b8;
+    font-size: 2em;
+    text-align: right;
+    padding-right: 10px;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Calculator', sans-serif;
+    position: relative;
+}
+
+.selectedOperator {
+    height: 45px;
+    width: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 25px;
+    top: 56px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.savedValue {
+    display: flex;
+    height: 25px;
+    width: 45%;
+    background-color: transparent;
+    position: absolute;
+
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: 'Calculator', sans-serif;
+    left: 41px;
+    top: 38px;
+}
+
+
+
+.pad {
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: fit-content;
+    height: 50px;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.key {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.enter {
+    background-color: #FF0054;
+    color: white;
+}
+
+.clear {
+    height: 30px;
+    width: 30px;
+    border: solid 1px white;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    top: 124px;
+    right: 13px;
+    cursor: pointer;
+}
+
+/*=====================================================================pokedex Style=====================================================*/
+.exo5 {
+    width: 100%;
+}
+
+.blue {
+    background-color: #42BFFF;
+}
+
+.red {
+    background-color: #D14450;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.black {
+    background-color: #4C4F50;
+}
+
+.green {
+    background-color: #5BAF6B;
+}
+
+.yellow {
+    background-color: #ECD444;
+}
+
+.pokedex {
+    width: 100%;
+    height: 800px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+}
+
+.pokedex-layout {
+    display: flex;
+    width: 60%;
+    height: 100%;
+
+    margin: 0px;
+    align-items: flex-end;
+}
+
+.leftFold {
+    background-color: black;
+    width: 55%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.rightFold-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 85%;
+    border-radius: 10px;
+}
+
+.top {
+    background-color: #FF334C;
+
+
+    height: 15%;
+    border-bottom: solid 10px #B93B47;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    border-radius: 10px;
+
+}
+
+.mainLedBorder {
+    height: 56px;
+    width: 56px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLed {
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+.tiny-leds-container {
+    width: 160px;
+    height: 50px;
+
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ledBorder {
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    background-color: #4C4F50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.led {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding-left: 1px;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.screenAreaAndJoint-container {
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 85%;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+.screenArea-border {
+    width: 90%;
+    height: 100%;
+
+    background-color: #B93B47;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    position: relative;
+    z-index: 1;
+}
+
+.screenArea {
+    height: 95%;
+    width: 95%;
+    background-color: #FF334C;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px black;
+
+}
+
+.screen-border {
+    margin-top: 10px;
+    width: 80%;
+    height: 60%;
+    max-height: 65%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px black;
+
+}
+
+.dotsContainer,
+.bigDotAndSpeaker-container {
+    width: 100px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
+.bigDot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
+.bigDotAndSpeaker-container {
+    width: 80%;
+    justify-content: space-between;
+}
+
+.speaker {
+    height: 100%;
+    width: 50px;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.speaker div {
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: gray;
+}
+
+.poke-screen {
+    width: 85%;
+    height: 80%;
+    border: solid 1px black;
+    display: flex;
+    /* overflow: hidden; */
+    flex-wrap: nowrap;
+    flex-shrink: none;
+}
+
+.pokeScreen1 {
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    flex-shrink: none;
+
+}
+
+.pokeScreen2 {
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    flex-shrink: none;
+    background-color: aqua;
+    display: none;
+
+}
+
+.processingScreen {
+    background-image: url('../assets/glitch.webp');
+    transition: all 1s ease-in-out;
+    background-position: center;
+    background-size: 100%;
+    flex-shrink: none;
+}
+
+.displayScreen {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: none;
+
+
+}
+
+.displayedArtwork {
+    height: 90%;
+    max-height: 90%;
+    width: auto;
+    max-width: 90%;
+}
+
+.joint {
+    border-radius: 10px;
+    background-color: black;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+
+}
+
+.edge {
+    height: 10%;
+    border-radius: 10px;
+    background-color: #FF334C;
+}
+
+.up {
+    border-bottom: solid 5px #B93B47;
+}
+
+.down {
+    border-top: solid 5px #B93B47;
+}
+
+.middle {
+    height: 80%;
+    background-color: #FF334C;
+    border-bottom: solid 5px #B93B47;
+    border-top: solid 5px #B93B47;
+    border-radius: 10px;
+}
+
+.controller {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.miniScreen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 90%;
+    gap: 10px;
+}
+
+.pillBtn-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+}
+
+.pillBtn {
+    width: 70px;
+    border-radius: 20px;
+    height: 15px;
+    border: solid 1px black;
+}
+
+.greenScreen {
+    width: 90%;
+    height: 85%;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.statsList {
+    height: 100%;
+    width: 90%;
+    padding-left: 20px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    overflow: auto;
+}
+
+.statsList li {
+
+    color: #000;
+    list-style-type: none;
+    overflow: hidden;
+
+    white-space: nowrap;
+    animation: typing 0.5s steps(40) forwards;
+    /* Animation de frappe */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.miniScreen {
+    width: 90%;
+    height: 90%;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.miniScreenTitle {
+    width: 100%;
+    height: 20px;
+    color: black;
+    text-align: center;
+}
+
+.typesImg {
+    width: 70px;
+    height: 18px;
+}
+
+.crossContainer {
+    width: 35%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+
+}
+
+.crossArea {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossPart {
+    height: 100%;
+    width: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.upCross {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: solid 4px #4C4F50;
+    border-bottom: none;
+}
+
+.leftCross {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: solid 4px #4C4F50;
+    border-right: none;
+}
+
+.rightCross {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: solid 4px #4C4F50;
+    border-left: none;
+}
+
+.downCross {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: solid 4px #4C4F50;
+    border-top: none;
+}
+
+.middleCross {
+    position: relative;
+    z-index: 1;
+}
+
+.pixel {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-color: #4C4F50;
+    z-index: 2;
+}
+
+.topLeftPxl {
+    top: 0px;
+    left: 0px;
+}
+
+.topRightPxl {
+    top: 0px;
+    right: 0px;
+}
+
+.bottomLeftPxl {
+    bottom: 0px;
+    left: 0px;
+}
+
+.bottomRightPxl {
+    bottom: 0px;
+    right: 0px;
+}
+
+.centerRound {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid 2px #4C4F50;
+    box-sizing: border-box;
+}
+
+.rightFold {
+    width: 95%;
+    height: 95%;
+    background-color: #FF334C;
+    border-radius: 10px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.rightScreen {
+    width: 90%;
+    height: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    overflow: hidden;
+
+}
+
+.pokeList {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding-left: 0px;
+}
+
+.pokeListItem {
+    margin-top: 10px;
+    text-align: center;
+    width: 60%;
+    list-style: none;
+    color: black;
+    cursor: pointer;
+}
+
+.selectedPokeItem {
+    border: solid 3px black;
+    border-radius: 5px;
+
+}
+
+.pads-container {
+    height: 20%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+.pokeRow {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.pokePad {
+    height: 100%;
+    width: 20%;
+    border: solid 1px black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.additional-btns {
+    height: 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whitePads-container {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px black;
+}
+
+.whitePads-container .pokePad {
+    width: 50%;
+    height: 100%;
+    border: solid 1px black;
+}
+
+.pillBtnsAndStick-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.stick {
+    height: 40px;
+    width: 40px;
+    border: solid 1px #FFFFFF;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.miniScreens-container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+.closedFold {
+    width: 90%;
+    height: 100%;
+    background-color: #B93B47;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.pokeLogo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: solid 25px black;
+    flex-shrink: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokeballRedPart {
+    width: 100%;
+    height: 45%;
+    background-color: #FF334C;
+}
+
+.pokeballSeperator {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pokebal-btn {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: solid 10px black;
+}

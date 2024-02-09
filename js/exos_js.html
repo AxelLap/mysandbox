@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="exos_js.css" />
+    <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8049d998ca.js" crossorigin="anonymous"></script>
+    <title>exercices javaScript</title>
+</head>
+
+<body>
+    <h1>JAVASCRIPT</h1>
+    <a href="../index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+    <section class="section">
+        <h2>Exercice 1 : Counter</h2>
+
+        <section class="exercice">
+
+            <div class="counterContainer">
+                <button id="lb" class="counterBtn left"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <button id="lb10" class="counterBtn left10"><i class="fa-solid fa-chevron-left"></i><i
+                        class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="countBox">0</div>
+
+                <button id="rb" class="counterBtn right"><i class="fa-solid fa-chevron-right"></i></button>
+                <button id="rb10" class="counterBtn right10"><i class="fa-solid fa-chevron-right"></i><i
+                        class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <button class="clearBtn">clear !</button>
+            </div>
+        </section>
+        <h2>Exercice 2 : characters input counter</h2>
+        <section class="exercice">
+            <input class="txtInput" type="text" />
+            <div class="alert"></div>
+            <p class="ex2Count">You've wrote <span class="inputCount">0</span>/10 characters</p>
+        </section>
+        <h2>Exercice 3 : the shop list</h2>
+        <section class="exercice">
+
+            <div class="shopListAndBtn">
+
+                <div class="cartContainer">
+                    <ul class="cart">
+
+                    </ul>
+                    <div class="bill">
+                        items : <span class="nbItem"></span><br>
+                        total : <span class="totalPrice"></span>$
+                    </div>
+                </div>
+                <div class="btnContainer">
+                    <button id="sortA-Z" class="sideBtn">sort a - z</button>
+                    <button id="sortLowPrice" class="sideBtn">sort low-price - high-price</button>
+                    <button id="sortHighPrice" class="sideBtn">sort high-price - low-price</button>
+                    <button id="clearAll" class="sideBtn">clear all</button>
+                </div>
+            </div>
+
+            <div class="selectionBox">
+                <button id="art0001" class="itemBtn"><i class="fa-solid fa-apple-whole shopListItem"
+                        style="color: #ffffff;"></i></button>
+                <button id="art0002" class="itemBtn"><i class="fa-solid fa-lemon shopListItem"
+                        style="color: #ffffff;"></i></button>
+                <button id="art0003" class="itemBtn"><i class="fa-solid fa-carrot shopListItem"
+                        style="color: #ffffff;"></i></button>
+                <button id="art0004" class="itemBtn"><i class="fa-solid fa-pepper-hot shopListItem"
+                        style="color: #ffffff;"></i></button>
+            </div>
+        </section>
+        <h2>Exercice 4 : the Calculator</h2>
+        <section class="exercice">
+            <div class="calculatorContainer">
+                <input type="text" class="screen" id="calculatorScreen">
+                <div class="selectedOperator"></div>
+                <div class="savedValue"></div>
+                <button class="clear">CA</button>
+
+
+                <div class="pad">
+                    <div class="nbContainer">
+                        <div class="row 1">
+                            <div class="digit key" data-value="1">1</div>
+                            <div class="digit key" data-value="2">2</div>
+                            <div class="digit key" data-value="3">3</div>
+                            <div class="symbol key" data-value="+">+</div>
+                        </div>
+                        <div class="row 2">
+                            <div class="digit key" data-value="4">4</div>
+                            <div class="digit key" data-value="5">5</div>
+                            <div class="digit key" data-value="6">6</div>
+                            <div class="symbol key" data-value="-">-</div>
+                        </div>
+
+                        <div class="row 3">
+                            <div class="digit key" data-value="7">7</div>
+                            <div class="digit key" data-value="8">8</div>
+                            <div class="digit key" data-value="9">9</div>
+                            <div class="symbol key" data-value="*">x</div>
+                        </div>
+
+                        <div class="row 4">
+                            <div class="decim digit key" data-value=".">.</div>
+                            <div class="digit key" data-value="0">0</div>
+                            <div class="key enter" data-value="=">=</div>
+                            <div class="symbol key" data-value="/">:</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <h2>Exercice 5 : The old school pokedex</h2>
+        <section class="exercice exo5">
+            <section class="pokedex">
+
+                <div class="pokedex-layout">
+
+                    <div class="leftFold">
+
+                        <div class="top">
+                            <div class="mainLedBorder">
+                                <div class="mainLed blue"></div>
+                            </div>
+                            <div class="tiny-leds-container">
+                                <div class="ledBorder">
+                                    <div class="red led"></div>
+                                </div>
+
+                                <div class="ledBorder">
+                                    <div class="yellow led"></div>
+                                </div>
+
+                                <div class="ledBorder">
+                                    <div class="green led"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="screenAreaAndJoint-container">
+                            <div class="closedFold">
+                                <div class="pokeLogo">
+                                    <div class="pokeballRedPart"></div>
+                                    <div class="pokeballSeperator">
+                                        <div class="pokebal-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="screenArea-border">
+                                <div class="screenArea">
+                                    <div class="screen-border white">
+                                        <div class="dotsContainer">
+                                            <div class="dot red"></div>
+                                            <div class="dot red"></div>
+                                        </div>
+                                        <div class="poke-screen black">
+                                            <div class="pokeScreen1"></div>
+                                            <div class="pokeScreen2"></div>
+                                        </div>
+                                        <div class="bigDotAndSpeaker-container">
+                                            <div class="bigDot red"></div>
+                                            <div class="speaker">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="controller">
+                                        <div class="miniScreen-container">
+                                            <div class="pillBtn-container">
+                                                <div class="pillBtn red"></div>
+                                                <div class="pillBtn blue"></div>
+                                            </div>
+                                            <div class="greenScreen green">
+                                            </div>
+                                        </div>
+                                        <div class="crossContainer">
+                                            <div class="crossArea">
+                                                <div class="crossPart upCross"></div>
+                                            </div>
+                                            <div class="crossArea">
+                                                <div class="crossPart leftCross"></div>
+                                                <div class="crossPart middleCross">
+                                                    <div class="centerRound"></div>
+                                                    <div class="pixel topLeftPxl"></div>
+                                                    <div class="pixel topRightPxl"></div>
+                                                    <div class="pixel bottomLeftPxl"></div>
+                                                    <div class="pixel bottomRightPxl"></div>
+                                                </div>
+                                                <div class="crossPart rightCross"></div>
+                                            </div>
+                                            <div class="crossArea">
+                                                <div class="crossPart downCross"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="joint">
+                                <div class="edge up"></div>
+                                <div class="middle"></div>
+                                <div class="edge down"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rightFold-border red">
+                        <div class="rightFold">
+                            <div class="rightScreen black"></div>
+                            <div class="pads-container">
+                                <div class="pokeRow">
+                                    <div class="pokePad blue"></div>
+                                    <div class="pokePad blue"></div>
+                                    <div class="pokePad blue"></div>
+                                    <div class="pokePad blue"></div>
+                                    <div class="pokePad blue"></div>
+                                </div>
+                                <div class="pokeRow">
+                                    <div class="pokePad blue"></div>
+                                    <div class="pokePad blue"></div>
+                                    <div class="pokePad blue"></div>
+                                    <div class="pokePad blue"></div>
+                                    <div class="pokePad blue"></div>
+                                </div>
+                            </div>
+                            <div class="additional-btns">
+                                <div class="whitePads-container">
+                                    <button class="pokePad white"></button>
+                                    <button class="pokePad white"></button>
+                                </div>
+                                <div class="pillBtnsAndStick-container">
+                                    <div class="pillBtn-container">
+                                        <div class="pillBtn black"></div>
+                                        <div class="pillBtn black"></div>
+                                    </div>
+                                    <div class="stick yellow"></div>
+                                </div>
+                            </div>
+                            <div class="miniScreens-container">
+                                <div id="leftScreen" class="miniScreen black"></div>
+                                <div id="rightScreen" class="miniScreen black"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+<script src="./exos_js.js"></script>
+
+</html>
