@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>React • Fundamentals</title>
+  </head>
+  <body>
+    <!-- 🦁 crée une div avec l'id "root" -->
+    <div id="root">
+      <a href="../index.html" class="goBackBtn">Go back</a>
+    </div>
+    <!-- ℹ️ presque toutes les app React ont une "root".
+         C'est le premier nœud de notre arbre. -->
+  </body>
+
+  <script>
+    // Crée une div avec du style et un event listener
+    const helloDiv = document.createElement("div");
+    helloDiv.style.margin = "10vh auto";
+    helloDiv.style.border = "solid 2px black";
+    helloDiv.style.borderRadius = "10px";
+    helloDiv.style.cursor = "pointer";
+    helloDiv.innerText = "Hello 🤘";
+    helloDiv.addEventListener("click", () => alert("Tu as cliqué sur Hello !"));
+
+    // Fonction pour créer un bouton compteur
+    const Counter = (initialValue = 0) => {
+      const button = document.createElement("button");
+      button.innerText = `On a cliqué ${Number(initialValue)} fois`;
+      button.className = "counter";
+      button.addEventListener("click", () => {
+        const previousValue = Number(button.innerText.match(/\d+/)[0]);
+        button.innerText = `On a cliqué ${previousValue + 1} fois`;
+      });
+      return button;
+    };
+
+    // Fonction pour créer un bouton de réinitialisation
+    const ResetBtn = (initialValue = 0) => {
+      const button = document.createElement("button");
+      button.innerText = "Reset";
+      button.addEventListener("click", () => {
+        const counterBtns = document.querySelectorAll(".counter");
+        counterBtns.forEach(
+          (btn) => (btn.innerText = `On a cliqué ${initialValue} fois`)
+        );
+      });
+      return button;
+    };
+
+    // Crée la liste des fruits
+    const fruits = ["banana", "apple", "strawberry"];
+    const fruitsListUl = document.createElement("ul");
+    for (const fruit of fruits) {
+      const fruitLi = document.createElement("li");
+      fruitLi.innerText = fruit;
+      fruitsListUl.appendChild(fruitLi);
+    }
+
+    // Récupère l'élément root et ajoute les éléments créés
+    const root = document.querySelector("#root");
+    root.appendChild(helloDiv);
+    root.appendChild(Counter());
+    root.appendChild(Counter(0)); // Exemple de compteur avec valeur initiale correcte
+    root.appendChild(Counter(10)); // Exemple de compteur avec une autre valeur initiale
+    root.appendChild(ResetBtn());
+    root.appendChild(fruitsListUl);
+  </script>
+</html>
