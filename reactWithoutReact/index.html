@@ -20,6 +20,7 @@
     // Crée une div avec du style et un event listener
     const helloDiv = document.createElement("div");
     helloDiv.style.margin = "10vh auto";
+    helloDiv.style.width = "20vw";
     helloDiv.style.border = "solid 2px black";
     helloDiv.style.borderRadius = "10px";
     helloDiv.style.cursor = "pointer";
@@ -31,6 +32,7 @@
       const button = document.createElement("button");
       button.innerText = `On a cliqué ${Number(initialValue)} fois`;
       button.className = "counter";
+      button.style.margin = "20px";
       button.addEventListener("click", () => {
         const previousValue = Number(button.innerText.match(/\d+/)[0]);
         button.innerText = `On a cliqué ${previousValue + 1} fois`;
@@ -63,9 +65,7 @@
     // Récupère l'élément root et ajoute les éléments créés
     const root = document.querySelector("#root");
     root.appendChild(helloDiv);
-    root.appendChild(Counter());
-    root.appendChild(Counter(0)); // Exemple de compteur avec valeur initiale correcte
-    root.appendChild(Counter(10)); // Exemple de compteur avec une autre valeur initiale
+    root.appendChild(Counter()); // Exemple de compteur avec une autre valeur initiale
     root.appendChild(ResetBtn());
     root.appendChild(fruitsListUl);
   </script>
